@@ -4,7 +4,7 @@
 
 .donate-section {
   background: linear-gradient(rgba(11, 37, 69, 0.75), rgba(11, 37, 69, 0.75)),
-    url("https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1600&q=80")
+    url("../Images/The\ Main.jpg")
       no-repeat center center/cover;
   color: var(--white);
   text-align: center;
@@ -107,18 +107,71 @@ section p {
   background: #e6c85c;
 }
 
+@media screen {
+  .about-hero {
+    height: 40vh;
+  }
+
+  
+}
 @media (max-width: 768px) {
-  .donation-options {
+
+  header {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
-
-  .donation-card {
-    width: 90%;
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
   }
-
-  .donate-form {
-    width: 90%;
-    padding: 25px;
+  main {
+    padding: 40px 5%;
   }
 }
+  .card {
+  background: var(--white);
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card h3 {
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.card p {
+  color: var(--dark);
+  line-height: 1.5;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.card {
+  background: var(--white);
+  border: 1px solid #e0e0e0;
+
+}
+ .icon {
+  font-size: 40px;
+  color: var(--gold);
+  margin-bottom: 15px;
+
+ }
+.card {
+  background: var(--white);
+  border: 1px solid #e0e0e0;
+}
+.card {
+  background: var(--white);
+  border: 1px solid #e0e0e0;
+}
+.card {
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+  

@@ -8,6 +8,7 @@
     --gray: #4a4a4a;
     --black: #000000;
 
+
 }
 
 /* Reset */
@@ -69,10 +70,20 @@ nav ul li a {
     transition: color 0.25s ease;
     font-weight: 500;
 }
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+
+}
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: var(--gold);
+  color: var(--gold);
+  background: var(--white);
 
 }
 
@@ -90,7 +101,7 @@ nav ul li a.active {
 
 /* Hero Section */
 .hero {
-    background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    background: url('../Images/The\ Main.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -249,17 +260,40 @@ footer {
 }
 
 /* Utility & responsiveness */
+
 @media (max-width: 768px) {
     header {
         padding: 12px 20px;
     }
     .hero {
         height: 80vh;
+        padding: 0 10px;
+
     }
     .overlay {
         padding: 30px;
+
     }
     .hero h1 {
         font-size: 1.8rem;
+
     }
+    .hero p {
+        font-size: 1rem;
+
+    }
+    
+}
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
 }
