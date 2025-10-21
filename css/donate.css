@@ -1,0 +1,124 @@
+/* ==============================
+   Donate Page Styles
+   ============================== */
+
+.donate-section {
+  background: linear-gradient(rgba(11, 37, 69, 0.75), rgba(11, 37, 69, 0.75)),
+    url("https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1600&q=80")
+      no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 130px 20px 80px;
+  margin-top: 70px;
+}
+
+.donate-section h1 {
+  color: var(--gold);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.donate-section p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+section p {
+  color: var(--white);
+  
+}
+
+.donation-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.donation-card {
+  background: var(--white);
+  color: var(--nav-blue);
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 240px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.donation-card:hover,
+.donation-card.selected {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--gold);
+}
+
+.donation-card h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.donate-form {
+  background: var(--white);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  color: var(--nav-blue);
+}
+
+.donate-form h2 {
+  color: var(--gold);
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.donate-form input,
+.donate-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: var(--nav-blue);
+}
+
+.donate-form button {
+  width: 100%;
+  background: var(--gold);
+  color: var(--nav-blue);
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.donate-form button:hover {
+  transform: translateY(-2px);
+  background: #e6c85c;
+}
+
+@media (max-width: 768px) {
+  .donation-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donation-card {
+    width: 90%;
+  }
+
+  .donate-form {
+    width: 90%;
+    padding: 25px;
+  }
+}

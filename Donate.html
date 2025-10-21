@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate | Sure Heaven Ministries</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/donate.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">Sure Heaven Ministries</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="#">School</a></li>
+        <li><a href="#">Foundation</a></li>
+        <li><a href="#">Churches</a></li>
+        <li><a href="update.html">Update</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="Donate.html" class="donate-btn">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Donate Hero Section -->
+  <section class="donate-section">
+    <h1>Donate  Now</h1>
+    <p>Your donation helps us spread the Gospel, build churches, and support communities worldwide.</p>
+   
+    <div class="donation-options">
+      <div class="donation-card" onclick="selectAmount(20)">
+        <h3>$20</h3>
+        <p>Support missionary work and evangelism outreach.</p>
+      </div>
+      <div class="donation-card" onclick="selectAmount(50)">
+        <h3>$50</h3>
+        <p>Help us construct new churches in local communities.</p>
+      </div>
+      <div class="donation-card" onclick="selectAmount(100)">
+        <h3>$100</h3>
+        <p>Empower pastors and provide ministry resources.</p>
+      </div>
+      <div class="donation-card" onclick="selectAmount(200)">
+        <h3>$200</h3>
+        <p>Partner in large-scale Gospel crusades and missions.</p>
+      </div>
+    </div>
+
+    <form class="donate-form" id="donateForm">
+      <h2>Enter Your Donation Details</h2>
+
+      <input type="text" id="name" name="name" placeholder="Full Name" required />
+      <input type="email" id="email" name="email" placeholder="Email Address" required />
+
+      <select id="donationType" required>
+        <option value="">Select Donation Type</option>
+        <option value="tithe">Tithe</option>
+        <option value="Foundation">Foundation</option>
+        <option value="offering">Offering</option>
+        <option value="seed">Seed Faith</option>
+        <option value="project">Church Building Project</option>
+      </select>
+
+      <input type="number" id="amount" name="amount" placeholder="Enter Amount (USD)" min="1" required />
+
+      <button type="submit">Proceed to Donate</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sure Heaven Ministries | All Rights Reserved</p>
+  </footer>
+
+  <script src="donate.js"></script>
+</body>
+</html>
